@@ -1,6 +1,6 @@
 ---
 license: mit
-title: 習近平音声変換
+title: 基于SoVits4的习近平歌声转换
 sdk: gradio
 emoji: 🏃
 colorFrom: red
