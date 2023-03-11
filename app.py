@@ -16,7 +16,7 @@ logging.getLogger('matplotlib').setLevel(logging.WARNING)
 
 config_path = "configs/config.json"
 
-model = Svc("logs/44k/G_114400.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
+model = Svc("logs/44k/G_64000.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
 
 
 
@@ -46,9 +46,14 @@ with app:
     with gr.Tabs():
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
-                sovits4.0 在线demo
+                习近平歌声转换 在线demo 基于so-vits-svc 4.0 项目原地址：https://github.com/svc-develop-team/so-vits-svc
                 
-                此demo为预训练底模在线demo，使用数据：云灏 即霜 辉宇·星AI 派蒙 绫地宁宁
+                so-vits-svc与VITS的不同之处在于，VITS乃文字转语音，so-vits-svc为语音转语音，可保留原音调等，适合转换歌声。
+                本项目继承MIT协议，欢迎再分发及二次创作，我不对该项目的使用做任何附加限制，其他限制以MIT协议为准。
+
+                鸣谢人员：innnky(原项目作者) BOT-666(前技术人员，后失联) chika0801(贡献了海量习近平音源，因未取得许可，数据集不公开)
+                因项目高度敏感，一般问题请在Community内提问，如需私密交流，请先开帖说明来意后协商使用安全的联络手段。
+                门罗币 XMR赞助地址：87MTHJgrCRfC6S8hV1TNiV1SyYZ19ny7o8YHui462TYKiVLzUpdTHDCfErqbSSSe4GMriVEfM2xK6eG87sEwvQPj4LMBqdD
                 """)
             spks = list(model.spk2id.keys())
             sid = gr.Dropdown(label="音色", choices=spks, value=spks[0])
