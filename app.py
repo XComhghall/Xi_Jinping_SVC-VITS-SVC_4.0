@@ -16,7 +16,7 @@ logging.getLogger('matplotlib').setLevel(logging.WARNING)
 
 config_path = "configs/config.json"
 
-model = Svc("logs/44k/G_40000.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000 (1).pt")
+model = Svc("logs/44k/G_40000.pth", "configs/config.json", cluster_model_path="logs/44k/kmeans_10000.pt")
 
 
 
