@@ -6,5 +6,5 @@ emoji: 🏃
 colorFrom: red
 colorTo: red
 pinned: true
-appfile: app.py
+app_file: app.py
 ---
