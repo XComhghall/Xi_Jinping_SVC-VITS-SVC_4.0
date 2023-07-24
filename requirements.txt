@@ -1,12 +1,12 @@
 Flask
 Flask_Cors
 gradio
-numpy==1.20.3
-pyworld==0.2.5
-scipy==1.7.3
+numpy==1.23.5
+pyworld
+scipy==1.10.0
 SoundFile==0.12.1
-torch==1.13.1
-torchaudio==0.13.1
+torch
+torchaudio
 tqdm
 scikit-maad
 praat-parselmouth
@@ -14,5 +14,5 @@ onnx
 onnxsim
 onnxoptimizer
 fairseq==0.12.2
-librosa==0.8.1
+librosa==0.9.1
 tensorboard
