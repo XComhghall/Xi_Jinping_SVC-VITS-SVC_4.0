@@ -49,10 +49,10 @@ with app:
                 Duplicate of CLTV/WinnieThePoohSVC_sovits4 via pitaogou/Qingfeng-Sing-sovits4
                 
                 「维尼包歌声转换」在线 demo
-                基于 so-vits-svc 4.0
+                基于 So-VITS-SVC 4.0
                 项目原地址：https://github.com/svc-develop-team/so-vits-svc
                 
-                so-vits-svc 与 VITS 的不同之处在于，VITS 乃文字转语音，so-vits-svc 为语音转语音，可保留原音调等，适合转换歌声。
+                So-VITS-SVC 与 VITS 的不同之处在于，VITS 乃文字转语音，So-VITS-SVC 为语音转语音，可保留原音调等，适合转换歌声。
                 本项目继承 MIT 协议，欢迎再分发及二次创作，我不对该项目的使用做任何附加限制，其他限制以 MIT 协议为准。
 
                 鸣谢人员：innnky（原项目作者）、BOT-666（前技术人员，后失联）、chika0801（贡献了海量习近平音源，因未取得许可，数据集不公开）
