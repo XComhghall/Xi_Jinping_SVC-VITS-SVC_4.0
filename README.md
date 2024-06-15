@@ -1,6 +1,6 @@
 ---
 license: mit
-title: 基于SoVits4的维尼熊歌声转换
+title: 基于 So-VITS-SVC 4.0 的维尼熊歌声转换
 sdk: gradio
 emoji: 🏃
 colorFrom: red
