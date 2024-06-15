@@ -46,8 +46,12 @@ with app:
     with gr.Tabs():
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
-                Duplicate of
-                WitchHuntTV/XJP_Singing → CLTV/WinnieThePoohSVC_sovits4 → pitaogou/Qingfeng-Sing-sovits4
+                Duplicated from 1.
+                WitchHuntTV/XJP_Singing
+                via 2.
+                CLTV/WinnieThePoohSVC_sovits4
+                via 3.
+                pitaogou/Qingfeng-Sing-sovits4
                 
                 「维尼包歌声转换」在线 demo
                 基于 So-VITS-SVC 4.0
