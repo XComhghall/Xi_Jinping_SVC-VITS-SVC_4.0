@@ -46,31 +46,28 @@ with app:
     with gr.Tabs():
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
-                Duplicated from 1.
-                WitchHuntTV/XJP_Singing
-                via 2.
-                CLTV/WinnieThePoohSVC_sovits4
-                via 3.
-                pitaogou/Qingfeng-Sing-sovits4
+                Duplicated from 1. WitchHuntTV/XJP_Singing<br />
+                via 2. CLTV/WinnieThePoohSVC_sovits4<br />
+                via 3. pitaogou/Qingfeng-Sing-sovits4<br />
                 
-                「维尼包歌声转换」在线 demo
-                基于 So-VITS-SVC 4.0
+                「维尼包歌声转换」在线 demo<br />
+                基于 So-VITS-SVC 4.0<br />
                 项目原地址：https://github.com/svc-develop-team/so-vits-svc
                 
-                So-VITS-SVC 与 VITS 的不同之处在于，VITS 乃文字转语音，So-VITS-SVC 为语音转语音，可保留原音调等，适合转换歌声。
+                So-VITS-SVC 与 VITS 的不同之处在于，VITS 乃文字转语音，So-VITS-SVC 为语音转语音，可保留原音调等，适合转换歌声。<br />
                 本项目继承 MIT 协议，欢迎再分发及二次创作，我不对该项目的使用做任何附加限制，其他限制以 MIT 协议为准。
 
-                鸣谢人员：innnky（原项目作者）、BOT-666（前技术人员，后失联）、chika0801（贡献了海量习近平音源，因未取得许可，数据集不公开）
+                鸣谢人员：innnky（原项目作者）、BOT-666（前技术人员，后失联）、chika0801（贡献了海量习近平音源，因未取得许可，数据集不公开）<br />
                 因项目一般娱乐，一般问题请在 Community 内提问，如需私密交流，请先开帖说明来意后协商使用安全的联络手段。
                 """)
             spks = list(model.spk2id.keys())
             sid = gr.Dropdown(label="音色", choices=spks, value=spks[0])
             vc_input3 = gr.Audio(label="上传音频（长度小于 90 秒）")
-            vc_transform = gr.Number(label="变调（整数，可以正负，半音数量，升高八度就是 12）", value=0)
-            cluster_ratio = gr.Number(label="聚类模型混合比例，0–1 之间，默认为 0 不启用聚类，能提升音色相似度，但会导致咬字下降（如果使用建议 0.5 左右）", value=0)
-            auto_f0 = gr.Checkbox(label="自动 f0 预测，配合聚类模型 f0 预测效果更好,会导致变调功能失效（仅限转换语音，歌声不要勾选此项会究极跑调）", value=False)
+            vc_transform = gr.Number(label="变调 — 半音，整数，可以正负。高八度就是 12。", value=0)
+            cluster_ratio = gr.Number(label="聚类模型混合比例 — 0–1，默认为 0 不启用聚类。能提升音色相似度，但会导致咬字下降。若使用建议 0.5 左右。", value=0)
+            auto_f0 = gr.Checkbox(label="自动 f0 预测 — 配合聚类模型 f0 预测效果更好。会导致变调功能失效。仅限转换语音。歌声不要勾选此项，会究极跑调。", value=False)
             slice_db = gr.Number(label="切片阈值", value=-40)
-            noise_scale = gr.Number(label="noise_scale 建议不要动，会影响音质，玄学参数", value=0.4)
+            noise_scale = gr.Number(label="noise_scale — 建议不要动，会影响音质，玄学参数", value=0.4)
             vc_submit = gr.Button("转换", variant="primary")
             vc_output1 = gr.Textbox(label="Output Message")
             vc_output2 = gr.Audio(label="Output Audio")
