@@ -18,7 +18,7 @@ Whereas VITS is text to speech, SVC-VITS-SVC is speech to speech, can preserve t
 
 This project inherits the MIT license with no additional restrictions by the author.
 
-Source code backed up from 1. https://huggingface.co/spaces/WitchHuntTV/XJP_Singing  
+Backed up and branched from 1. https://huggingface.co/spaces/WitchHuntTV/XJP_Singing  
 via 2. https://huggingface.co/spaces/CLTV/WinnieThePoohSVC_sovits4  
 via 3. https://huggingface.co/spaces/pitaogou/Qingfeng-Sing-sovits4
 
@@ -36,7 +36,7 @@ innnky SVC-VITS-SVC 企畫創始作者。
 BOT-666 原技術人員。後失聯。  
 chika0801 貢獻海量習近平音源。
 
-程式碼存檔自 1. https://huggingface.co/spaces/WitchHuntTV/XJP_Singing  
+存檔、分支自 1. https://huggingface.co/spaces/WitchHuntTV/XJP_Singing  
 經由 2. https://huggingface.co/spaces/CLTV/WinnieThePoohSVC_sovits4  
 經由 3. https://huggingface.co/spaces/pitaogou/Qingfeng-Sing-sovits4
 
