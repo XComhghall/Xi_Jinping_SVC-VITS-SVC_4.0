@@ -46,20 +46,20 @@ with app:
     with gr.Tabs():
         with gr.TabItem("Basic"):
             gr.Markdown(value="""
-                习主席玉音转换器 线上 demo<br />
-                基于 SVC-VITS-SVC 4.0 https://github.com/svc-develop-team/so-vits-svc<br />
+                习主席玉音转换器 线上 demo  
+                基于 SVC-VITS-SVC 4.0 https://github.com/svc-develop-team/so-vits-svc  
                 SVC-VITS-SVC 与 VITS 的不同之处在于，VITS 为文字转语音。SVC-VITS-SVC 为语音转语音，可保留原音调等，适用于转换歌声。
 
-                此企画继承 MIT 许可条款。欢迎自由使用、复制、改变。企画作者未附加任何限制。其他限制以 MIT 许可条款为准。<br />
+                此企画继承 MIT 许可条款。欢迎自由使用、复制、改变。企画作者未附加任何限制。其他限制以 MIT 许可条款为准。  
                 因此企画一般娱乐，请于 community 报错、提问、讨论，或发帖说明、协商以安全的方式私下联络。
 
-                鸣谢：<br />
-                innnky SVC-VITS-SVC 企画创始作者。<br />
-                BOT-666 原技术人员。后失联。<br />
+                鸣谢：  
+                innnky SVC-VITS-SVC 企画创始作者。  
+                BOT-666 原技术人员。后失联。  
                 chika0801 贡献了海量习近平音源。未经授权，数据集不公开。
 
-                Duplicated from 1. WitchHuntTV/XJP_Singing<br />
-                via 2. CLTV/WinnieThePoohSVC_sovits4<br />
+                Duplicated from 1. WitchHuntTV/XJP_Singing  
+                via 2. CLTV/WinnieThePoohSVC_sovits4  
                 via 3. pitaogou/Qingfeng-Sing-sovits4
                 """)
             spks = list(model.spk2id.keys())
