@@ -66,7 +66,7 @@ with app:
             sid = gr.Dropdown(label="音色", choices=spks, value=spks[0])
             vc_input3 = gr.Audio(label="上载音频 长度须小于 90 秒。转换长音频请于本地执行。")
             vc_transform = gr.Number(label="变调 半音，整数，可设为负数。高八度即 12。", value=0)
-            cluster_ratio = gr.Number(label="聚类模型混合比例 0–1。提升音色相似，但降低咬字准确、清晰。预设为 0，不启用。若使用，建议 0.5 左右。", value=0)
+            cluster_ratio = gr.Number(label="聚类模型混合比例 0–1。提升音色相似，但降低咬字准确、清晰。预设为 0，不启用。若启用，建议 0.5 左右。", value=0)
             auto_f0 = gr.Checkbox(label="自动 F0 预测 配合聚类模型效果更好。仅限语音。歌声勿选此项，会究极跑调。使变调功能失效。", value=False)
             slice_db = gr.Number(label="切片阈值", value=-40)
             noise_scale = gr.Number(label="Noise scale 建议不要动，会影响音质。玄学参数。", value=0.4)
