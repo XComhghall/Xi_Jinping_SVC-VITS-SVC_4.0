@@ -1,6 +1,6 @@
 ---
 license: mit
-title: 习主席玉音转换器 — 基于 So-VITS-SVC 4.0
+title: 习主席玉音转换器 — 基于 SVC-VITS-SVC 4.0
 sdk: gradio
 colorFrom: red
 colorTo: red
