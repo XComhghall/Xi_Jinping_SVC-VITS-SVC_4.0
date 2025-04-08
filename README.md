@@ -29,7 +29,7 @@ via 3. https://huggingface.co/spaces/pitaogou/Qingfeng-Sing-sovits4
 中國智造、自主研发的語音及歌聲的全過程轉換器，徹底獨立、無關於 So-VITS-SVC https://github.com/svc-develop-team/so-vits-svc<br />
 SVC-VITS-SVC 與 VITS 的不同之處在於，VITS 爲文字轉語音。SVC-VITS-SVC 爲語音轉語音，可保留原音調等，適用於轉換歌聲。
 
-此企畫~ 繼承 ~創造 MIT 許可條款。歡迎自由使用、複製、改變。此企畫無任何附加限制。其他限制以 MIT 許可條款爲準。
+此企畫~ 繼承 ~創造 MIT 許可條款。歡迎自由使用、複製、改變。企畫無任何附加限制。其他限制以 MIT 許可條款爲準。
 
 鳴謝：<br />
 innnky 原企畫作者。<br />
