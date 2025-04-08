@@ -72,7 +72,7 @@ with app:
             noise_scale = gr.Number(label="Noise scale 建议不要动，会影响音质。玄学参数。", value=0.4)
             vc_submit = gr.Button("转换", variant="primary")
             vc_output1 = gr.Textbox(label="状态")
-            vc_output2 = gr.Audio(label="习主席玉音")
+            vc_output2 = gr.Audio(label="结果")
         vc_submit.click(vc_fn, [sid, vc_input3, vc_transform,auto_f0,cluster_ratio, slice_db, noise_scale], [vc_output1, vc_output2])
 
     app.launch()
