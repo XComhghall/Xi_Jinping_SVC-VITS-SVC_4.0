@@ -1,7 +1,7 @@
 ---
 license: MIT
 title: 基于 So-VITS-SVC 4.0 的习主席玉音转换器
-sdk: gradio
+sdk: Gradio
 colorFrom: red
 colorTo: red
 pinned: true
