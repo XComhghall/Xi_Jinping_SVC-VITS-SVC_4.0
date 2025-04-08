@@ -27,7 +27,7 @@ def vc_fn(sid, input_audio, vc_transform, auto_f0,cluster_ratio, slice_db, noise
     # print(audio.shape,sampling_rate)
     duration = audio.shape[0] / sampling_rate
     if duration > 90:
-        return "请上传小于 90 s 的音频，需要转换长音频请本地进行转换", None
+        return "请上传小于 90 秒的音频，需要转换长音频请本地进行转换", None
     audio = (audio / np.iinfo(audio.dtype).max).astype(np.float32)
     if len(audio.shape) > 1:
         audio = librosa.to_mono(audio.transpose(1, 0))
