@@ -64,7 +64,7 @@ def main(HubertExport, NetExport):
         test_noise = torch.randn(1, 192, 10)
         test_sid = torch.LongTensor([0])
         input_names = ["c", "f0", "mel2ph", "uv", "noise", "sid"]
-        output_names = ["audio", ]
+        output_names = ["结果 — 习主席玉音转换器", ]
         SVCVITS.eval()
         torch.onnx.export(SVCVITS,
                           (
