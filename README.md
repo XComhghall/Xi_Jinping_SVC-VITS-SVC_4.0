@@ -40,7 +40,9 @@ chika0801 貢獻海量習近平音源。
 經由 2. https://huggingface.co/spaces/CLTV/WinnieThePoohSVC_sovits4<br />
 經由 3. https://huggingface.co/spaces/pitaogou/Qingfeng-Sing-sovits4
 
-# 2025-4
+# 修補錯誤
+## 2025-4
+
 因 pip, PyTorch 更新產生的相容問題，建議添加 pre-requirements.txt
 ```
 pip<24.1
