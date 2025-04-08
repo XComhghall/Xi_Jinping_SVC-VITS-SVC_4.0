@@ -51,7 +51,7 @@ with app:
                 SVC-VITS-SVC 4.0 与 VITS 的不同之处在于，VITS 为文字转语音。SVC-VITS-SVC 为语音转语音，可保留原音调等，适用于转换歌声。
 
                 此企画继承 MIT 许可条款。欢迎再分发及二次创作。我不对此企画的使用附加任何限制。其他限制以 MIT 许可条款为准。<br />
-                因此企画一般娱乐，请于 community 报错、提问、讨论，或发帖说明、协商使用安全的方式私下联络。
+                因此企画一般娱乐，请于 community 报错、提问、讨论，或发帖说明、协商以安全的方式私下联络。
 
                 鸣谢：<br />
                 innnky 原企画作者。<br />
@@ -64,10 +64,10 @@ with app:
                 """)
             spks = list(model.spk2id.keys())
             sid = gr.Dropdown(label="音色", choices=spks, value=spks[0])
-            vc_input3 = gr.Audio(label="上传音频 长度须小于 90 秒。转换长音频请于本地执行。")
+            vc_input3 = gr.Audio(label="上载音频 长度须小于 90 秒。转换长音频请于本地执行。")
             vc_transform = gr.Number(label="变调 半音，整数，可设为负数。高八度即 12。", value=0)
             cluster_ratio = gr.Number(label="聚类模型混合比例 0–1。提升音色相似，但降低咬字准确、清晰。预设为 0，不启用。若使用，建议 0.5 左右。", value=0)
-            auto_f0 = gr.Checkbox(label="自动 F0 预测 配合聚类模型效果更好。仅限语音。歌声勿选此项，会究极跑调。会导致变调功能失效。", value=False)
+            auto_f0 = gr.Checkbox(label="自动 F0 预测 配合聚类模型效果更好。仅限语音。歌声勿选此项，会究极跑调。使变调功能失效。", value=False)
             slice_db = gr.Number(label="切片阈值", value=-40)
             noise_scale = gr.Number(label="Noise scale 建议不要动，会影响音质。玄学参数。", value=0.4)
             vc_submit = gr.Button("转换", variant="primary")
