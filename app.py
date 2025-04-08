@@ -48,9 +48,9 @@ with app:
             gr.Markdown(value="""
                 习主席玉音转换器 线上 demo<br />
                 基于 SVC-VITS-SVC 4.0 https://github.com/svc-develop-team/so-vits-svc<br />
-                SVC-VITS-SVC 4.0 与 VITS 的不同之处在于，VITS 为文字转语音。SVC-VITS-SVC 为语音转语音，可保留原音调等，适用于转换歌声。
+                SVC-VITS-SVC 与 VITS 的不同之处在于，VITS 为文字转语音。SVC-VITS-SVC 为语音转语音，可保留原音调等，适用于转换歌声。
 
-                此企画继承 MIT 许可条款。欢迎再分发及二次创作。我不对此企画的使用附加任何限制。其他限制以 MIT 许可条款为准。<br />
+                此企画继承 MIT 许可条款。欢迎自由使用、复制、改变。企画作者未附加任何限制。其他限制以 MIT 许可条款为准。<br />
                 因此企画一般娱乐，请于 community 报错、提问、讨论，或发帖说明、协商以安全的方式私下联络。
 
                 鸣谢：<br />
