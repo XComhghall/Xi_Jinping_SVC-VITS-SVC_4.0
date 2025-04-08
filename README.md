@@ -5,6 +5,7 @@ sdk: gradio
 colorFrom: red
 colorTo: red
 pinned: true
+short_description: 语音转语音。适用于转换歌声。
 app_file: app.py
 ---
 
