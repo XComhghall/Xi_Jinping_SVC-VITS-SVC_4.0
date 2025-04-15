@@ -1,11 +1,11 @@
 ---
 license: mit
-title: 习主席玉音转换器 — 基于 SVC-VITS-SVC 4.0
+title: 习主席玉音转换器
 sdk: gradio
 colorFrom: red
 colorTo: yellow
 pinned: true
-short_description: 语音转语音。适用于转换歌声。
+short_description: 语音转语音。适用于转换歌声。基于 SVC-VITS-SVC 4.0。
 app_file: app.py
 ---
 
